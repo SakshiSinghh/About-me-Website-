@@ -1,0 +1,78 @@
+
+
+/* feature:size of spinning image */
+
+#photocontainer{
+    background: url("../photo/aboutmephoto/greeting.jpg") center;
+    max-width:696px;/*Size*/
+    height:1000px;
+    /* rotation of image shown on website */
+    transform: rotate(180deg);
+    animation:spinday 4s  ; /* take 4s to spin */
+    -webkit-animation-fill-mode:forwards;  /* make sure it does not go upside down */
+
+}
+/*:Size and settings of the container itself*/
+#topcontainer{
+    width:696px;
+    height:500px;/*Only 500px if not will become longer */
+    overflow: hidden;/*So that the remaining overflow does not appear*/
+    margin:0;
+    /*Shadow*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding:0;
+}
+
+ /* imp for picture to spin */
+ /* 360 degrees so that picture is right side  */
+ /* 100% is when the animation is complete. */
+@keyframes spinday { 100% {  transform:rotate(360deg); } }
+
+
+/*Settings the clickable for 3D slideshows*/
+[type=radio] {
+    display: none;
+}
+/*Enable 3D perspective */
+#slider {
+    height: 500px;
+    max-width:480px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+/*Visible click area for switching */
+/* position for slider */
+#slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;/*Allow click like effect when hover*/
+    transition: transform 0.4s ease;
+}
+
+
+/*Settings for 3D slideshow,upon click ,using transform to move next position*/
+#s1:checked ~ #slide2,#s2:checked ~ #slide3,#s3:checked~#slide1{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-30%,0,-100px);
+}
+#s1:checked ~ #slide1,#s2:checked ~ #slide2,#s3:checked ~ #slide3{
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+}
+#s1:checked ~ #slide3,#s2:checked ~ #slide1,#s3:checked~#slide2{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(30%,0,-100px);
+}
+/*Images for the 3D slideshows*/
+#slide1 { background: url("../photo/aboutmephoto/myphoto1.jpg") }
+#slide2 { background:url("../photo/aboutmephoto/myphoto2.jpg") }
+#slide3 { background: url("../photo/aboutmephoto/myphoto3.jpg")}
+
+
+
+
+

@@ -1,0 +1,289 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+   background-color: #FAA0A0;
+}
+/*Search icon svg*/
+#search{
+    width:30px;
+    opacity:70%;
+    cursor: pointer;/*Allow-click effect*/
+}
+/*Darken color when color to create a effect*/
+#search:hover{
+    opacity: 100%;
+}
+
+
+
+.navbar-nav {
+    margin-left: auto;
+
+}
+
+
+.navbar .navbar-nav .nav-link:hover {
+    color: pink;
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;/*Relative positioning*/
+    margin-right: 50px;
+}
+/*Upon hover ,opink bar smoothly show up*/
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;/*Absolute positioning*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: palevioletred;/*Grey*/
+    color: transparent;
+    width: 0;
+    content: '';
+    height: 3px;/*Height*/
+    transition: all 0.5s;/*Transition*/
+}
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+/*Search bar expanded overlay(Overlay that appear after click on search**/
+#searchbar{
+    position:fixed;/*Fixed positioning*/
+    height:100%;
+   background:url("../photo/searchpage/searchpage.jpg");
+   /*Background photo for search*/
+    top:80px;
+    display:flex;
+    left:0;
+    justify-content: center;
+    z-index:200;
+    object-fit: cover;
+    visibility: hidden;/*By default hide this overlay,on click javascript scripts will change this */
+
+}
+
+/*Fade in effect*/
+@keyframes cover { from { opacity: 0;}}
+/*Fade in effect for main index page name */
+@keyframes fly { from { opacity: 0;top:90%} }
+
+/*Animation when search overlay appear*/
+.searchbaranimation{
+    animation:cover 1s , 5s alternate;
+}
+/*padding for section*/
+.margintop{
+    padding-top:200px;
+    padding-bottom:200px ;
+}
+/*pink background*/
+.color{
+    background-color: rgba(255, 230, 234);
+}
+/*Text to appear in center of page*/
+.mainname{
+    position:absolute;/*Absolute positioning*/
+    left:50%;
+    top:60%;
+    transform: translate(-50%, -50%);/*Center*/
+    animation: fly 2s , 3s alternate ;/*Add animation */
+
+}
+/*Large text for title*/
+#enlarge{
+    font-size:48px;
+}
+
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+/*use for typing effect*/
+.cursor{
+    animation: blink .6s linear infinite alternate;
+}
+@keyframes typing { from { width: 0;} }
+/*Grey scale to colorful effect*/
+.greyscale{
+
+    animation:greys 3s ,3s alternate;
+}
+@keyframes greys {
+    from {
+        filter:grayscale(100%);
+    }
+    to {
+        filter:grayscale(0%);
+    }
+}
+/*Search result table*/
+#searchtable tr th a{
+    text-decoration: none;
+    color:black;
+}
+/*Logo sizing*/
+.profilepicsizing{
+    height:30px;
+}
+/*SearchBar*/
+.searchbarcss{
+    position:relative;
+    top:30%;
+    top:100px;
+    outline:none;
+    font-size: 40px;
+    border:1px solid grey;
+    border-radius:5px;
+    
+}
+/*Arrow down button in cover section*/
+.arrowdown{
+    height:50px;
+    cursor:pointer;/*Allowable click*/
+    filter:invert(100%);/*Make it black*/
+}
+
+.arrowdown:hover{
+    background-color: white;
+}
+
+/*Forestgreen color word*/
+.forestgren{
+    color:forestgreen;
+}
+.carouselsetting{
+    max-width:804px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*Red color word*/
+.redcolor{
+    color:red;
+
+}
+/*Slategray color word*/
+.slategry{
+  color:slategray;
+}
+.cardsstyle{
+    width: 20rem;
+    height: 25rem;
+}
+.cardimagestyle{
+    height:50px;
+}
+/*yello color word*/
+.yellowcolor{
+    color:#feb236;
+}
+/*Dark Cyan color word*/
+.darkcyn{
+    color:darkcyan;
+}
+
+/*Image size for cards*/
+.cardimg1{
+    height:240px;
+}
+
+
+/* Purple color words*/
+.purplecolor{
+    color:#6b5b95;
+}
+/*Pinkred color word*/
+.pinkred{
+    color:#c94c4c;
+}
+/*golden color word*/
+.golden{
+    color:goldenrod;
+}
+/*Set Z-index 99 for highest priority*/
+.zindex99{
+    z-index: 99;
+}
+.toastprofile{
+    width:25px;
+}
+
+
+/*Brown color word*/
+.brown{
+    color:brown;
+}
+/*Dark Cyan color word*/
+.darkcyan{
+    color:darkcyan;
+}
+
+/*Orange red color word*/
+.orangered{
+    color:orangered;
+}
+/* Size of my photo at Science Center ,photo at about me page*/
+.photoeffectabout{
+    max-height:500px;/*Size*/
+    /*Shadow*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*Royal blue text*/
+.royalblue{
+    color:royalblue;
+}
+/*Position for search table*/
+.searchfeature{
+    position:relative;top:30%;
+}
+/*Settings for the search record table*/
+.searchtable{
+    border-collapse: separate;display:none;
+}
+
+/*Disable border and enable shadow for the contact card at about me page*/
+.contactbox{
+    border:0;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*medium green word*/
+.mediumgreen{
+    color:mediumseagreen;
+}
+.height400{
+ height:400px;
+}
+/*orange word*/
+.orange{
+    color:orange;
+}
+/*red word*/
+.red{
+    color:red;
+}
+/*rosybrown word*/
+.rosybrown{
+    color:rosybrown;
+}
+/*Allow element to be view as clickable*/
+.cursorpointer{
+    cursor:pointer;
+
+}
+.tablesearch{
+    position:relative;top:30%;
+
+}
+/*For the tables at about me page*/
+.tablesetting{
+    border-collapse: separate;
+}
+
+
+/*Card size*/
+.cardsize{
+    width:400px;
+}

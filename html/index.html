@@ -1,0 +1,433 @@
+<!-- NAME:SINGH SAKSHI 
+ADMIN NO: 2228479
+CLASS:DIT/FT/1A/01 -->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the width of the page to follow the screen-width of the device and zoom level when loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Define page title to appear on tab-->
+    <title>Sakshi's Home Page</title>
+    <!--Insert search keywords for search engine-->
+    <meta name="keywords" content="Singh Sakshi DIT/FT/1A/01">
+    <!---Set page icon to appear at tab-->
+    <link rel="icon" href="../photo/catprofilepic.jpeg"/>
+    <!---Set website description for search engine-->
+    <meta name="description"  content="Personal Website ">
+    <meta name="name" content="sakshi">
+    <meta name="image" content="catprofile.jpg">
+    <!---Bootstrap 5 support-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Import common css throughout website-->
+    <link href="../css/common.css" rel="stylesheet">
+    <!--Import page-specific css-->
+    <link href="../css/index.css" rel="stylesheet">
+    <!-- Import page-specific jshow to import js -->
+    <script src="../js/index.js"></script> 
+</head>
+<!--Start of body-->
+<body>
+<!--Start of header-->
+<header>
+    <!--Navigation Bar-->
+    <nav id='nav'  class="navbar py-4 navbar-expand-lg navbar-light fixed-top bg-white">
+           
+    
+        <!--Remove the 20% gaps for navigation bar on page-->
+        <div class="container-fluid">
+            <!-- Let profile picture to appear with page title with s-->
+            <a class="navbar-brand" href="#"><img src="../photo/catprofilepic.jpeg" class="d-inline-block align-text-right rounded me-2 profilepicsizing" alt="Image of Sakshi's profile picture">Sakshi HomePage </a>
+            <ul class="navbar-nav">
+
+             <!-- Hamburger Icon for mobile format for nav bar to chnange when content collapses behind buttion due to different viewpoets-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <!--Div collapse mode for small screen /  a navigation bar can extend or collapse, depending on the screen size-->
+            <!-- .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- position nav bar to the right -->
+                <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Items-->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sp.html" >SP Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="future.html" >Future Prospect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" >Feedback</a>
+                    </li>
+                </ul>
+
+            </ul>
+                <!--Search button-->
+                <form class="d-flex">
+                    <!--Search icon taken from https://www.clipartmax.com/middle/m2H7m2K9H7b1G6m2_computer-icons-google-search-clip-art-transprent-%E2%93%92-transparent-background-magnifying-glass/-->
+                    <img src="../photo/searchbaricons/search.png" id="search" alt="Image of search"/>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--End of header-->
+<!--Start of search overlay configuration-->
+<!--Animation for appear of overlay-->
+<div class="container-fluid searchbaranimation" id="searchbar">
+    <div class="row ">
+        <div class="col-12 ">
+            <figure>
+            <!--On typing ,search matching continuously-->
+            <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss" placeholder="Search..">
+            <figcaption>If you want to acess the page your currently on , u can search the title of the page or use the nav bar. Eg,if your on About me</figcaption>
+
+        </figure>
+            <br>
+            <!--Display search result in table-->
+            <div class="col-12 tablesearch" >
+                <table class="table table-light tablesetting" id="searchtable">
+                    <tr><th onclick="window.location.href='about.html'" class="cursorpointer" scope="row">About Me</th></tr>
+                    <tr><th onclick="window.location.href='about.html#achievement'" class="cursorpointer"  scope="row">Cca and Certification</th></tr>
+                    <tr><th onclick="window.location.href='about.html#srpsection'" class="cursorpointer"  scope="row">Science and Research</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#classmatese'" class="cursorpointer"  scope="row">Classmates</th></tr>
+                    <tr><th onclick="window.location.href='about.html#contactme'" class="cursorpointer"  scope="row">Contact Me</th></tr>
+                    <tr><th onclick="window.location.href='future.html#ditreflection'" class="cursorpointer"  scope="row">Diploma in Information Technology</th></tr>
+                    <tr><th onclick="window.location.href='future.html#expsp'" class="cursorpointer"  scope="row">Software Engineering and Mobile Developer</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" class="cursorpointer"  scope="row">Feedback </th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" class="cursorpointer"  scope="row">Feedback Form</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#spsection1'" class="cursorpointer"  scope="row">First Impression</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#foodsection'" class="cursorpointer"  scope="row">Food</th></tr>
+                    <tr><th onclick="window.location.href='future.html'" class="cursorpointer"  scope="row">Future Prospect</th></tr>
+                    <tr><th onclick="window.location.href='future.html#jobsection'" class="cursorpointer"  scope="row">Future Job And Opportunities</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#splesson'" class="cursorpointer"  scope="row">Lessons</th></tr>
+                    <tr><th onclick="window.location.href='sp.html'" class="cursorpointer"  scope="row">Singapore Polytechnic</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" class="cursorpointer"  scope="row">User Agreement </th></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Script for searchbar to hide results by default-->
+<script src="../js/searchspecific.js"></script>
+<!--This is the cover of page-->
+<!-- class mainvideo is the background image -->
+<!-- tried using bootsrap way did not work -->
+<div class="container-fluid mainvideo">
+</div>
+<!--Start of About me section-->
+<!--class mainname is used to position div at center-->
+<div class="container mainname text-center top-60 color:black">
+    <h1 id="enlarge">Singh Sakshi</h1> <br> <br>
+    <h3>My Experience in Singapore Polytechnic</h3><br><br>
+
+    <!--Upon clicked ,slide to the first section-->
+    <!--Icon from BootStrap https://icons.getbootstrap.com/icons/arrow-down-circle/-->
+    <img onclick="window.location.href='index.html#aboutmesum';"  src="../photo/arrowdown/arrowdown.svg" alt="Image of arrow down" class="arrowdown">
+</div>
+
+
+<!--First section in Page-->
+<!-- bootstrap -->
+<div class="container align-items-center justify-content-center margintop" id="aboutmesum">
+    <div class="row align-items-center about">
+        <!--For medium screen size and about ,2 element on same line .For small screen size (ie.phone),1 element per line-->
+        <!-- md and sm is the breakpoint for the arrangement col-6 col-12 -->
+        <div class="col-md-6 col-sm-12" >
+            <!--Subtitles -->
+            <h1 class="display-1">About me</h1>
+            <br>
+            <p> My name is sakshi !! Lovely to know that you have decided to hop onto my website :> Before you 
+                get going to the different pages of the website,
+                let me tell you more about myself. I am an easy going and bubbly person.
+                A cup of milo always readies me for my day. I am more of a Half Full glass person as I believe in looking for the positive.
+                I love hanging out with my friends and spending time with my loved ones. 
+                I would call myself creative because I created this website (ha-ha).</p>
+
+        </div>
+
+        <!--Photo at right occupying half of the line for medium size screen,and full line for small screen(next line) -->
+        <div class="offset-md-2 col-md-4 col-sm-12 about1">
+             <!-- The data-bs-ride="carousel" attribute is used to mark a carousel as animating starting at page load -->
+             <div id="carouselfade"   class="spcarouselphoto1 carousel slide carousel-fade" data-bs-ride="carousel">
+                <!-- define elements in carousel -->
+                <div class="carousel-inner">
+                    <div data-bs-interval="1700" class="carousel-item active">
+                        <img src="../photo/aboutmephoto/sakshiphoto1.jpg"  class="d-block w-100 spcarouselphoto"  alt="Image of Singapore Polytechnic Front">
+                    </div>
+                    <div data-bs-interval="1700" class="carousel-item">
+                        <img src="../photo/aboutmephoto/sakshiphoto2.jpg"   class="d-block w-100 spcarouselphoto"  alt="Image of Singapore Polytechnic Walk Way">
+                    </div>
+                    <div data-bs-interval="1700" class="carousel-item">
+                        <img src="../photo/aboutmephoto/sakshiphoto3.jpg" class="d-block w-100 spcarouselphoto" alt="Image of Singapore Polytechnic T21 block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+           
+
+    
+
+
+<!-- End of first section-->
+
+<!--Start of second section-->
+<!--pink color section-->
+<!---Class color for background color to be pink butand margintop to have a 200px padding top and bottom-->
+<div class="container-fluid color  margintop">
+<div class="container ">
+    <div class="row">
+        <!--text of section at center and occupy full line-->
+       <div class="col-12 text-center">
+       <h1 class="display-2"><span class="pinkred"> Secondary School</span> Life</h1>
+<p>I was from Kranji Secondary Schoool from 2018 to 2021. <br>My Kranji experience was very memorable and has nurtured me to the person i am today.</p>
+      <br>
+           <br>
+       </div>
+                   
+
+           <div class="col-12 container text-center d-flex justify-content-center">
+               <div id="Captions" class="carousel slide carousel-fade carouselsetting"  data-bs-ride="carousel">
+                 <!--The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript Carousels
+                     don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content.-->
+                     <!-- carousel-fade to your carousel to animate slides with a fade transition instead of a slide. -->
+                   <!--Number of indicator /slideshow-->
+                   <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#Captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+                       <!--active class needs to be added to one of the slides otherwise the carousel will not be visible.-->
+                       <button type="button" data-bs-target="#Captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#Captions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                       <button type="button" data-bs-target="#Captions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                       <button type="button" data-bs-target="#Captions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                       <button type="button" data-bs-target="#Captions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                       
+                   </div>
+                   <!--Captions for different image while slideshow.Photo slideshow change every 2 second(2000ms)-->
+                   <div class="carousel-inner">
+                       <div class="carousel-item active" data-bs-interval="1000">
+                           <img src="../photo/secondaryschoolphoto/friendscarousel/school1.jpg"  class="d-block w-100 img-fluid" alt="Image of HCI Science Research Competition Distinction">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h5>HCI SRP ATTAINED DISTINCTION</h5>
+                           </div>
+                           <!-- Add captions to your slides easily with the .carousel-caption  -->
+                           <!-- We hide them initially with .d-none (when device becomes smaller ) and bring them back on medium-sized devices with .d-md-block. -->
+                       </div>
+                       <div class="carousel-item" data-bs-interval="1000">
+                           <img src="../photo/secondaryschoolphoto/friendscarousel/school2.jpg"   class="d-block w-100 img-fluid" alt="ori">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h5>Sec One Orientation</h5>
+                           </div>
+                       </div>
+                       <div class="carousel-item" data-bs-interval="1000">
+                           <img src="../photo/secondaryschoolphoto/friendscarousel/school3.jpg"   class="d-block w-100 img-fluid" alt="school">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h5>Last class of secondary school</h5>
+
+                           </div>
+                       </div>
+                       <div class="carousel-item" data-bs-interval="1000">
+                           <img src="../photo/secondaryschoolphoto/friendscarousel/school4.jpg"  class="d-block w-100 img-fluid" alt="Image of 15th Student Council Investiture 2019">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h5>15th Student Council Investiture 2019</h5>
+
+                           </div>
+                       </div>
+
+                       <div class="carousel-item" data-bs-interval="1000">
+                           <img src="../photo/secondaryschoolphoto/friendscarousel/school6.jpg"  class="d-block w-100 img-fluid" alt="gard">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h5>Graduation</h5>
+                           </div>
+                       </div>
+                       </div>
+                       
+                   </div>                   
+               </div>
+
+           </div>
+</div>
+</div>
+</div>
+<!--End of second section-->
+<!--Start of third section-->
+<div id="spsection" class="container margintop">
+    <div class="row">
+        <!--A image overlay effect component at left occupying half of the line for medium size screen,and full line for small screen-->
+        <div class="col-lg-6 col-sm-12 ">
+            <!--Photo imcorpoerate with javascript for fade effect from sketch to real using js -->
+     <div  class=" singaporepoly" id="singaporepoly" ></div>
+        </div>
+        <!--Text at left occupying right of the line for medium size screen,and full line for small screen-->
+        <div class="col-lg-6 col-sm-12 text-start">
+            <!--Subtitles with part being red color-->
+            <h1 class="display-3"><span class="redcolor">Singapore Polytechnic</span> Experience</h1>
+<p>I am a AY2022 Student currently studying in Singapore Polytechnic.<br>In the course of Diploma In Information Technology.<br>Find out more about my experience here! </p>
+        </div>
+
+        </div>
+
+</div>
+<!--End of third section-->
+<!--Start of forth section-->
+<!--New container that is pink-->
+<div class="container-fluid margintop color ">
+<div class="  container ">
+    <!--More option section-->
+    <h1 class="display-3"> <span class="pinkred"> More</span> <span class="slategry"> for you</span></h1>
+
+
+    <br><br>
+<!-- centre elements in page with equal space -->
+    <div class=" row justify-content-center">
+<!--3 spinning card element ,appear all 3 in extralarge screen,2 in medium ,1 in small screen-->
+    <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3">
+ <!--Card 1 (on hover flip to backside-->
+    <div class="card" id='card1'  >
+        <!--Front side of card-->
+      <div id="card1font">
+          <!-- Image from https://www.pexels.com/photo/alphabet-blur-books-close-up-301920/ -->
+        <img src="../photo/cardphoto/edu.jpg" class="card-img-top" alt="Image of books">
+        <div class="card-body">
+            <h3 class="card-title">Education Background</h3>
+        </div>
+        </div>
+        <!--Back side of card-->
+        <div id="card1backside">
+            <div class="container row aligncard">
+                <div class="text-center">
+                    <img src="../photo/cardicons/graduation_cap.svg" alt="Icon of graduation caps" class="cardimagestyle">
+                    <p><strong>I am a student of <span class="yellowcolor"> Kranji Secondary School</span> from 2018 to 2021 and currently a student of Singapore Polytechnic <span class="darkcyn">Singapore Polytechnic</span>. Know more about my experience.</strong></p>
+                    <!-- button will lead to specefic page  -->
+                    <div class="col text-center">
+                        <button type="button" class="btn" id="lineargr"onclick="window.location.href='sp.html'">Singapore Polytechnic</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        
+
+        <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3" >
+            <!--Card 3 (on hover flip to backside)-->
+            <div class="card" id="card2" >
+                <!--Front side of card-->
+               <div id="card2font">
+                   <!-- Image from https://www.execunet.com/category/career-center/market-info-and-trends/executive-market-intelligence-market-info-and-trends/page/2/
+                   -->
+                <img src="../photo/cardphoto/career.jpg" class="card-img-top " alt="Image of Achievement">
+                <div class="card-body">
+                    <h3 class="card-title">Future plans</h3>
+                </div>
+                </div>
+                <!--Back side of card-->
+                <div id="card2backside">
+                    <div class="container row aligncard">
+                        <div class="text-center">
+                            <img src="../photo/cardicons/certificate.svg" alt="Icon of certificates" class="cardimagestyle">
+                            <p><strong>From 2017 to present,I have had aspirations to join the IT sector such as <span class="purplecolor">App Development</span> and <br> <span class="pinkred">Software Engineering</span>.View more about my plans here !!</strong></p>
+                        </div>
+                         <!-- button will lead to specefic page  -->
+                        <div class="col text-center">
+                            <button type="button" class="btn " id="lineargr" onclick="window.location.href='future.html';">View here</button>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3" >
+            <!--Car 3 (on hover flip to backside-->
+            <div class="card" id='card3' >
+                <!--Front side of card-->
+             <div id="card3font">
+                 <!--Image from Singapore Polytechnic Website ,https://www.sp.edu.sg/soc/courses/full-time-diplomas/-->
+                <img src="../photo/cardphoto/DIT.jpeg"  class="card-img-top " alt="Image of DIT course info">
+                <div class="card-body">
+                    <h3 class="card-title">My Course</h3>
+                </div>
+             </div>
+                <!--Back side of card-->
+                <div id="card3backside">
+                <div class="container row aligncard">
+                    <div class="text-center">
+                        <img src="../photo/cardicons/document.svg" alt="Icon of document" class="cardimagestyle">
+                        <p><strong>I am a AY2022 student in the course of <span class="golden">Diploma in Information Technology </span>Learn more about how #WHYSP is like.</strong></p>
+
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" onclick="window.location.href='sp.html#splesson';" id="lineargr" class="btn">Look at the experience</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--Toast,welcome message.-->
+        <div class=" position-fixed bottom-0 end-0 p-3 zindex99">
+            <!-- When using autohide: false, you must add a close button to allow users to dismiss the toast. -->
+            <!-- include aria-atomic="true" to ensure that the entire toast is always announced as a single unit, if not it may cause errors when there are change  -->
+            <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+                <div class="toast-header">
+                    <img src="../photo/catprofilepic.jpeg"  class="rounded me-2 toastprofile" alt="Image of Sakshi's profile picture">
+                    <strong class="mr-auto">Sakshi</strong>
+
+                    <small>  &nbsp; Now </small>
+                    <!--Button to dismiss toast : THE CROSS-->
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+                    </button>
+                </div>
+                <!--Message-->
+                <div class="toast-body">
+                    Hello,I am Sakshi.<br>Thanks for visiting this site.<br>Hope that you can find what you need.<br>Have a nice day!! :)
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+
+<!-- css features -->
+<!-- Create a figure box and figure caption
+o Add a background image (starting of page )
+o Add a border to an element (searchbarcss)
+o Create text or box shadow ( for most pics and features)
+o Create linear or radial gradient ( on the cards)
+o Apply a 2D or 3D transformation (cards)-->
+
+<!-- additional
+carousel
+cards
+rocket fires
+rotating picture in contsiner -->
+
+
+
+<!-- javascript functions  -->
+<!-- searchbar function
+toast 
+fade in of one image to another (singapore polytechnic sketch)
+3D Slideshow*
+greyscale to colour ( cloud , food , book)
+typwriting
+ -->
+
+
+

@@ -1,0 +1,486 @@
+<!-- NAME:SINGH SAKSHI 
+ADMIN NO: 2228479
+CLASS:DIT/FT/1A/01 -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the width of the page to follow the screen-width of the device and zoom level when loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Define page title to appear on tab-->
+    <title>About Sakshi</title>
+    <!--Insert search keywords for search engine-->
+    <meta name="keywords" content="Sakshi Website">
+    <!---Set page icon to appear at tab-->
+    <link rel="icon" href="../photo/catprofilepic.jpeg"/>
+    <!---Set website description for search engine-->
+    <meta name="description"  content="Personal Website | Sakshi | )">
+    <meta name="name" content="sakshi">
+    <meta name="image" content="profile.jpg">
+    <!---Bootstrap 5 support-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Import common css throughout website-->
+    <link href="../css/common.css" rel="stylesheet">
+    <!--Import page-specific css-->
+    <link href="../css/about.css" rel="stylesheet">
+    <!--Import page-specific js-->
+    <script src="../js/about.js"></script>
+
+</head>
+<!--Start of body-->
+<body>
+<!--Start of header-->
+<header>
+      <!--Navigation Bar-->
+      <nav id='nav'  class="navbar py-4 navbar-expand-lg navbar-light fixed-top bg-white">
+           
+    
+        <!--Remove the 20% gaps for navigation bar on page-->
+        <div class="container-fluid">
+            <!-- Let profile picture to appear with page title-->
+            <a class="navbar-brand" href="#"><img src="../photo/catprofilepic.jpeg" class="d-inline-block align-text-right rounded me-2 profilepicsizing" alt="Image of Sakshi's profile picture">Sakshi About me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <ul class="navbar-nav">
+
+             <!-- Hamburger Icon for mobile format for nav bar to chnange when content collapses behind buttion due to different viewpoets-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <!--Div collapse mode for small screen /  a navigation bar can extend or collapse, depending on the screen size-->
+            <!-- .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. -->
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                 <!-- position nav bar to the right -->
+                <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Items-->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sp.html" >SP Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="future.html" >Future Prospect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" >Feedback</a>
+                    </li>
+                </ul>
+
+            </ul>
+                <!--Search button-->
+                <form class="d-flex">
+                    <!--Search icon taken from https://www.clipartmax.com/middle/m2H7m2K9H7b1G6m2_computer-icons-google-search-clip-art-transprent-%E2%93%92-transparent-background-magnifying-glass/-->
+                    <img src="../photo/searchbaricons/search.png" id="search" alt="Image of search"/>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--End of header-->
+<!--Start of search overlay configuration-->
+<!--Animation for appear of overlay-->
+<div class="container-fluid searchbaranimation" id="searchbar">
+    <div class="row ">
+        <div class="col-12 ">
+            <!--On typing ,search matching-->
+
+            <figure>
+                <!--On typing ,search matching continuously-->
+                <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss" placeholder="Search..">
+                <figcaption>If you want to acess the page your currently on , u can search the title of the page or use the nav bar. Eg,if your on About me</figcaption>
+    
+            </figure>
+                        <br>
+            <!--Display search result in table-->
+            <div class="col-12 tablesearch" >
+                <table class="table table-light tablesetting" id="searchtable">
+                    <tr><th onclick="window.location.href='about.html'" class="cursorpointer" scope="row">About Me</th></tr>
+                    <tr><th onclick="window.location.href='about.html#achievement'" class="cursorpointer"  scope="row">Cca and Certification</th></tr>
+                    <tr><th onclick="window.location.href='about.html#srpsection'" class="cursorpointer"  scope="row">Science and Research</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#classmatese'" class="cursorpointer"  scope="row">Classmates</th></tr>
+                    <tr><th onclick="window.location.href='about.html#contactme'" class="cursorpointer"  scope="row">Contact Me</th></tr>
+                    <tr><th onclick="window.location.href='future.html#ditreflection'" class="cursorpointer"  scope="row">Diploma in Information Technology</th></tr>
+                    <tr><th onclick="window.location.href='future.html#expsp'" class="cursorpointer"  scope="row">Software Engineering and Mobile Developer</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" class="cursorpointer"  scope="row">Feedback </th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" class="cursorpointer"  scope="row">Feedback Form</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#spsection1'" class="cursorpointer"  scope="row">First Impression</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#foodsection'" class="cursorpointer"  scope="row">Food</th></tr>
+                    <tr><th onclick="window.location.href='future.html'" class="cursorpointer"  scope="row">Future Prospect</th></tr>
+                    <tr><th onclick="window.location.href='future.html#jobsection'" class="cursorpointer"  scope="row">Future Job And Opportunities</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#splesson'" class="cursorpointer"  scope="row">Lessons</th></tr>
+                    <tr><th onclick="window.location.href='sp.html'" class="cursorpointer"  scope="row">Singapore Polytechnic</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" class="cursorpointer"  scope="row">User Agreement </th></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Script for searchbar to hide results by default-->
+<script src="../js/searchspecific.js"></script>
+<!--This is the cover of page-->
+<!--pink section-->
+<div class="container-fluid margintop color">
+    <div class="container">
+        <!-- Centralised div to show a welcome animation-->
+        <div class="row text-center d-flex justify-content-center align-item-center textfly">
+            <div class="col-12 " id="topcontainer">
+                <div id="photo">
+                    <!-- bootstrap does not work -->
+                    <div id="photocontainer"></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <br><br>
+                <h1><span id="timegreeting"></span></h1>
+                <p>Hello, This is my about me page </p>
+                <!--Icon from BootStrap https://icons.getbootstrap.com/icons/arrow-down-square/-->
+                <img  onclick="window.location.href='about.html#aboutmeover'" src="../photo/arrowdown/arrowdown.svg" alt="Icon of arrow down" class="arrowdown">
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<!--End of first section-->
+<!--Second section-->
+<div class="container margintop" id='aboutmeover'>
+    <div class="row">
+        <!-- Occupy left half of line for screen above medium and full line for small screen-->
+        <div class="col-sm-12 col-md-6">
+            <!--Subtitle with typing effect-->
+            <h1 class="display-3"> <span class="royalblue">More about me </span></h1>
+
+            <p>I have unconventional and unique interests such as food blogging and volunteering! Firstly, 
+                I started food blogging when I was 15 years old. It really caught my interest as I always loved trying out new food. 
+                Isn’t it right that food is the best way to make us happy! Hence to bring it up a notch, I started food blogging 
+                to express my views to and audience. Secondly, I love volunteering, volunteering has always had a place in my heart. 
+                It gives me a sense of accomplishment. Not only that, its my way of giving to the community to those in need.</p>
+        </div>
+            <!--Occupy right half of line for screen above medium and full line for small screen-->
+            <!--A 3D photo slideshow-->
+        <div class='offset-md-2 col-md-4 col-sm-12 about1'>
+            <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3" >
+                <label for="s1" id="slide1"></label>
+                <label for="s2" id="slide2"></label>
+                <label for="s3" id="slide3"></label>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- Important !! This is needed so that multiple animations can run async-->
+    <!-- Script use to create typing animation-->
+<script src="../js/textanimation.js"></script>
+    <!--End of section2-->
+    <!--Start of section 3-->
+    <!--pink-->
+<div class="container-fluid margintop color" id="srpsection">
+    <div class="container ">
+        <div class="row ">  
+            <!-- to move to the right  -->
+            <div class=" float: right; border: 1px solid;width: 227px; height: 50px ">
+                
+                <div class="contain">
+                    <!--Subtitles with mixed colors-->
+                <h1 class="display-4"><span class="orangered">Science</span> And <span class="purplecolor">Research</span> </h1>
+                <!-- Quote using blockquote-->
+                    <figure>
+                    <figcaption class="blockquote-footer fontsize12" >
+                        my experience <cite title="Source Title">singh sakshi </cite>
+                    </figcaption>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">A journey that enriched my learning</p>
+                      </blockquote>
+                </figure>
+                
+                <p>My friends and I decided to team up because prior to this competition we are involved as a science research team in the HCI science research programme to investigate piezoelectricity.
+
+                    I decided to take part in the Singapore Energy Grand challenge because it was an opportunity for me to involve my critical thinking .Due, to the increased use of non renewable energy such as fossil fuels , we decided that our previous research idea and other sustainable energy methods could be explored in real world contexts such as our school.Firstly , we brainstormed with our teacher on feasible and sustainable methods which we could install in our school through the minecraft world. We collaborated on our ideas and further enhanced it . Secondly , we attended the clinical sessions which made us more aware of the hurdles Singapore faces which allowed us to further scrutinize our suggested ideas . Thus through this process , we decided on energy efficient methods that could be used for a prolonged period of time and for the future . 
+                    We were very happy and felt that all of our long hours of hard work was worth it .
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- add margintop and bottom so that diff sizes of slideshow does not mess up other sectiosn -->
+           <div class="container align-items-center justify-content-centre margintop=0 marginbottom=0  ">
+            
+          
+
+            <div id="Captions" class="carousel slide carousel-fade carouselsetting"  data-bs-ride="carousel">
+              <!--The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript Carousels
+                  don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content.-->
+                  <!-- carousel-fade to your carousel to animate slides with a fade transition instead of a slide. -->
+                <!--Number of indicator /slideshow-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#Captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+                    <!--active class needs to be added to one of the slides otherwise the carousel will not be visible.-->
+                    <button type="button" data-bs-target="#Captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#Captions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Captions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#Captions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#Captions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    
+                </div>
+                <!--Captions for different image while slideshow.Photo slideshow change every 2 second(2000ms)-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="../photo/aboutmephoto/srp2.png"  class="d-block w-100 img-fluid" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Singapore Energy Grand Challenge (Youth) 2021.</h5>
+                        </div>
+                        <!-- Add captions to your slides easily with the .carousel-caption  -->
+                        <!-- We hide them initially with .d-none (when device becomes smaller ) and bring them back on medium-sized devices with .d-md-block. -->
+                    </div>
+        
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../photo/aboutmephoto/srp3.png"   class="d-block w-100 img-fluid" alt="school">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Singapore Energy Grand Challenge (Youth) 2021.</h5>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../photo/aboutmephoto/srp4.png"  class="d-block w-100 img-fluid" alt="Image of 15th Student Council Investiture 2019">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Singapore Energy Grand Challenge (Youth) 2021.</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../photo/aboutmephoto/srp5.png"   class="d-block w-100 img-fluid" alt="rhd">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Singapore Energy Grand Challenge (Youth) 2021.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../photo/aboutmephoto/srp6.png"  class="d-block w-100 img-fluid" alt="gard">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Singapore Energy Grand Challenge (Youth) 2021.</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>                   
+            </div>
+          
+</div>
+        </div>
+</div>
+            </div>
+           
+<!-- End of third section-->
+<!--Start of forth section-->
+<div class="container margintop ">
+    <div class="row" id="education">
+        <!-- Occupy left half of line for screen above medium and full line for small screen-->
+        <div class="col-md-6 col-sm-12">
+            <!--Subtitles with mixed color-->
+            <h1 class="display-5"><span class="darkcyan">Education</span> Background</h1>
+            <p>I am previously a student in Kranji Secondary School and currently a student in Singapore Polytechnic </p>
+        </div>
+        <!-- Occupy right half of line for screen above medium and full line for small screen-->
+        <div class="col-md-12 col-sm-12 ">
+            <br><br>
+            <!-- A table showing previous education which is resposnsive hover will have effect -->
+            <table class="table table-bordered border-dark table-hover table-responsive table-light table-sm">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">School </th>
+                    <th scope="col">Duration Of Study</th>
+                    <th scope="col">Stream</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Jurong West  Primary School</td>
+                    <td>2012-2017</td>
+                    <td>Standard</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Kranji Secondary School</td>
+                    <td>2017-2021</td>
+                    <td>Express</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td >Singapore Polytechnic</td>
+                    <td >2022-TBD</td>
+                    <td>SOC DIT</td>
+                </tr>
+        </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>
+<!-- End of forth section-->
+<!--Start of fifth section-->
+<div class="container-fluid margintop color" id="achievement">
+    <div class="container" >
+    <div class="row">
+        <!--Centralised text!-->
+        <div class="col-md-12 col-sm-12 text-center" >
+            <h1 class="display-4"><span class="golden">Cca Records</span> and <span class="brown">Certification</span></h1>
+            <p></p>
+            <br><br>
+        </div>
+        <!--Table that occupy left half of the line for medium and above screen ,full line for small screen-->
+        <div class=" offset-3  mx-auto col-md-6">
+            <table class="table table-bordered border-dark table-hover table-responsive table-sm table-light">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Record</th>
+                    <th scope="col">Points/Awards </th>
+                    <th scope="col">Year  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Hwa Chong Science Research Programme Competition </td>
+                    <td>Distinction</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Grand Youth Energy Challenge</td>
+                    <td>Special mention with Merit </td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td> National Inter School Debating Competition</td>
+                    <td>Second Runner UP</td>
+                    <td>2019</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>SSEF</td>
+                    <td>Special mention</td>
+                    <td>2020</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Appreciation for migrant workers</td>
+                    <td>Cca points </td>
+                    <td>2020</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Certificate of Merit for Student Leadership 2020</td>
+                    <td>Merit</td>
+                    <td>2020</td>
+                </tr>
+
+
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td> Senior Student Councillor </td>
+                    <td rowspan="7">Leadership</td>
+                    <td>2020</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Junior Student Councillor </td>
+                    <td>2019</td>
+                </tr>
+
+
+                </tbody>
+                
+            </table>
+        </div>     
+</div>
+
+   </div>
+</div>
+<!-- End of fifth section-->
+<!--Start of sixth section-->
+
+<!--Contact box-->
+<div class="container margintop">
+    <div class="container">
+        <div class="row" id="contactme">
+<!---Occupy full line-->
+            <div class="col-12">
+                <!-- Subtitle with colors-->
+                <h1 class="display-4"><span class="slategry">Contact</span> Me</h1>
+                <br>
+            </div>
+
+            <div class="  col-lg-12">
+                <!--Introducing card structure with shadow-->
+                <div class="card mb-3 contactbox">
+                    <div class="row">
+                        <!--Photo will occupy 7 grid in large device ,full line in small device-->
+                        <div class="col-lg-7 col-sm-12 d-flex" >
+                            <!-- https://www.google.com/search?q=contact+me+image&rlz=1C1BNSD_enSG999SG999&sxsrf=ALiCzsZ4ZAZIfiKmhnqFjV8hvT97lHkPAg:1657943393423&tbm=isch&source=iu&ictx=1&vet=1&fir=Z9YA_kSNlDe2kM%252CUcslx9O2imws1M%252C_%253B11cSf_W3p3OW7M%252CVYbkJrkmXVpU3M%252C_%253B2oyzcM5-XYb7BM%252CHjknwEwKrZDZYM%252C_%253BFX1Mz8JQc6XpRM%252CHjknwEwKrZDZYM%252C_%253BRL9IL9vpw8gVsM%252Cqe7Q-o3n37EqQM%252C_%253BZAUzdEMTfWNoAM%252Cqe7Q-o3n37EqQM%252C_%253BsBNJFELPqSsT4M%252CHjknwEwKrZDZYM%252C_%253B2I7bkAhCqbKj7M%252CUcslx9O2imws1M%252C_%253BJagm2Nat_94rAM%252CXKLH2XWJlxl46M%252C_%253B0HZL6fud78uOyM%252CUcslx9O2imws1M%252C_%253B4XyQHWwt53X7OM%252CUcslx9O2imws1M%252C_%253Bz1zA7447wpBCGM%252CHjknwEwKrZDZYM%252C_&usg=AI4_-kTL38p6ZhrQ2BFNRpJvv5T9OpyHyw&sa=X&ved=2ahUKEwjF55a4wPz4AhXbZ2wGHcrtCuQQ9QF6BAgMEAE#imgrc=FX1Mz8JQc6XpRM -->
+                            <img src="../photo/aboutmephoto/contactcard.jpg" class="img-fluid"  alt="Image of Northeastern's park">
+                        </div>
+                        <!--The text :contact information will occupy 5 grid in large screen and above and full line in small screen-->
+                        <div class="col-lg-5 col-sm-12" >
+
+                            <div class="card-body cardsize" >
+                                <h3 class="card-text">Singh Sakshi</h3>
+                                <p class="card-text">School Of Computing | DIT/FT/1A/01</p>
+                                <p class="card-text"><strong>Contact:</strong></p>
+                                <p class="card-text">+65 12345678 || +65 8302993</p>
+                                <p class="card-text">sakshi.22@ichat.sp.edu.sg </p>
+                                <p><strong>Address:</strong></p>
+                                <p class="card-text">Singapore Polytechnic<br>
+                                    500 Dover Road<br>
+                                    Singapore 139651</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Toast,welcome message.-->
+<div class=" position-fixed bottom-0 end-0 p-3 zindex99">
+ <!-- When using autohide: false, you must add a close button to allow users to dismiss the toast. -->
+            <!-- include aria-atomic="true" to ensure that the entire toast is always announced as a single unit, if not it may cause errors when there are change  -->
+    <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+        <div class="toast-header">
+            <!--Header:Profile pic + name +time-->
+            <img src="../photo/catprofilepic.jpeg"  class="rounded me-2 toastprofile" alt="Image of Sakshi's profile picture">
+            <strong class="mr-auto">Sakshi</strong>
+
+            <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
+                    <!--Button to dismiss toast : THE CROSS-->
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+            </button>
+        </div>
+        <!--Message-->
+        <div class="toast-body">
+            Get to know more about me <br> Have fun!
+        </div>
+    </div>
+</div>
+
+</body>

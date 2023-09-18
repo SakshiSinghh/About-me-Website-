@@ -1,0 +1,91 @@
+
+/* Common properties of some form*/
+.container{
+    min-height: 400px;
+}
+.commonform{
+    
+    width:100%;
+        outline: none;/* Remove the outline during selection*/
+        border:none;/*No border execpt the bottom border*/
+        border-bottom:1px solid black;
+    }
+    /*Uncommon Form : Selection of Mr/Mrs/Dr/ETC*/
+    .notcommonform{
+        width:20%;/*Width only 20%*/
+        outline: none;
+        border:none;
+        border-bottom:1px solid black;
+        background: none;
+    }
+    /* For all other Uncommon Form :*/
+    .notcommonform2{
+        width:100%;
+        outline: none;
+        border:none;
+        border-bottom:1px solid black;
+        background: none;
+    }
+    /*Properties for last name box*/
+    #last{
+        width:79%;
+    }
+    /*Properties for comment text box*/
+    #comment{
+        width:100%;
+        border:1px solid black;/*Different from other form,for this ,it is full border*/
+    
+    }
+    /*Properties for submit button*/
+    #submit{
+        background-color:mediumspringgreen;/*Set color green*/
+        border:none;/*No border*/
+        font-size:20px;
+        width:30%;
+        height:3rem;
+        border-radius: 30px;
+        font-weight:500;/*Font thickness*/
+    }
+    /*On hover ,change color to yellowish-green*/
+    #submit:hover{
+        background-color:#e0e699;
+    }
+    /*Term of condition button*/
+    #btnmodel{
+        background-color:cornflowerblue;/*Blue Background for button*/
+        border:none;
+        font-size:20px;
+        width:30%;
+        color:black;
+        height:3rem;
+        border-radius: 30px;
+        font-weight:500;
+    }
+    /*On hover turn royalblue*/
+    #btnmodel:hover{
+        background-color:royalblue;
+    }
+    
+    
+    
+      
+      h1 {
+        font-size: 5em;
+        color: black;
+        
+      }
+      /* Shorthand property combines six of the animation properties into a single property. */
+      h1.span {
+        border-right: .05em solid;
+        animation: caret 1s steps(1) infinite;
+      }
+      
+      @keyframes caret {
+        50% {
+          border-color: transparent;
+        }
+      }
+      
+    
+      
+    

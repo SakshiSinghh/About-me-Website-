@@ -1,0 +1,80 @@
+/*background photo of the first cover section*/
+/* boostarp did not work for image  */
+.mainvideo{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    left:0;/*Left 0 to avoid weird space*/
+    /* margin-top:72px;Avoid touching the navigation bar */
+    background:url("../photo/aboutmephoto/backie4.jpeg");
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* shadow for carousel fade  */
+#carouselfade {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+/*Card settings for the 3 cards at the more options section*/
+#card1,#card2,#card3{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s; /* animation speed when changimg position */
+    transform-style: preserve-3d;/*Allow 3D perception*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+/*Upon hover rotate the card*/
+#card1:hover,#card2:hover,#card3:hover{
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+/*Set backface visibility to not see behind*/
+#card1backside,#card1font,#card2backside,#card2font,#card3backside,#card3font{
+    position: absolute;
+    backface-visibility: hidden;
+}
+/*Settings for back side of the cards so that it faces behind*/
+#card1backside,#card2backside,#card3backside{
+    transform: rotateY(180deg);
+    background-color: white;
+    width:100%;
+    height:100%;
+}
+.catt{
+    perspective: 1000px; /* give 3d like effect */
+    width:20rem;height:25rem;
+}
+/*Aligning the card*/
+.aligncard{
+    top:10%;
+    position:relative;
+}
+/*Set size for sketched image of Singapore Polytechnic*/
+.singaporepoly{
+    width: 507px;
+    background: url("../photo/spphoto/sketchofsingaporepolytechnic.jpg");
+    height: 380px;
+
+}
+/*Set size of colored image of Singapore polytechnic*/
+.new{
+    background: url("../photo/spphoto/paintsingaporepolytechnic.jpg");
+    width: 537px;
+    height: 400px;
+    transition: all 0.8s;
+    transition-delay: 0.2s;/*Delay 2 s before executing*/
+
+}
+/*Linear gradient button*/
+#lineargr{
+    color:white;
+    background:linear-gradient(90deg,#009FFF,#ec2F4B);
+    border:0;
+}

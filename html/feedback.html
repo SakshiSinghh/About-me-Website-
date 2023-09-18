@@ -1,0 +1,524 @@
+<!-- NAME:SINGH SAKSHI 
+ADMIN NO: 2228479
+CLASS:DIT/FT/1A/01 -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the width of the page to follow the screen-width of the device and zoom level when loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Define page title to appear on tab-->
+    <title>Feedback Wall</title>
+    <!--Insert search keywords for search engine-->
+    <meta name="keywords" content="Sakshi">
+    <!---Set page icon to appear at tab-->
+    <link rel="icon" href="../photo/catprofilepic.jpeg"/>
+    <!---Set website description for search engine-->
+    <!---Bootstrap 5 support-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Import common css throughout website-->
+    <link href="../css/common.css" rel="stylesheet">
+    <!--Import page-specific css-->
+    <link href="../css/feedback.css" rel="stylesheet">
+    <!--Import page-specific js-->
+    <script src="../js/feedback.js"></script>
+</head>
+<!--Start of body-->
+<body>
+<!--Start of header-->
+<header>
+      <!--Navigation Bar-->
+      <nav id='nav'  class="navbar py-4 navbar-expand-lg navbar-light fixed-top bg-white">
+           
+    
+        <!--Remove the 20% gaps for navigation bar on page-->
+        <div class="container-fluid ">
+            <!-- Let profile picture to appear with page title-->
+            <a class="navbar-brand" href="#"><img src="../photo/catprofilepic.jpeg" class="d-inline-block align-text-right rounded me-2 profilepicsizing" alt="Image of Sakshi's profile picture">Sakshi Feedback &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <ul class="navbar-nav">
+
+             <!-- Hamburger Icon for mobile format-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Div collapse mode for small screen /  a navigation bar can extend or collapse, depending on the screen size-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Items-->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sp.html" >SP Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="future.html" >Future Prospect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" >Feedback</a>
+                    </li>
+                </ul>
+
+            </ul>
+                <!--Search button-->
+                <form class="d-flex">
+                    <!--Search icon taken from https://www.clipartmax.com/middle/m2H7m2K9H7b1G6m2_computer-icons-google-search-clip-art-transprent-%E2%93%92-transparent-background-magnifying-glass/-->
+                    <img src="../photo/searchbaricons/search.png" id="search" alt="Image of search"/>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--End of header-->
+<!--Start of search overlay configuration-->
+<!--Animation for appear of overlay-->
+<div class="container-fluid searchbaranimation" id="searchbar">
+    <div class="row ">
+        <div class="col-12 ">
+            <!--On typing ,search matching-->
+            
+            <figure>
+                <!--On typing ,search matching continuously-->
+                <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss" placeholder="Search..">
+                <figcaption>If you want to acess the page your currently on , u can search the title of the page or use the nav bar. Eg,if your on About me</figcaption>
+    
+            </figure>
+            <br>
+            <!--Display search result in table-->
+            <div class="col-12 tablesearch" >
+                <table class="table table-light tablesetting" id="searchtable">
+                    <tr><th onclick="window.location.href='about.html'" class="cursorpointer" scope="row">About Me</th></tr>
+                    <tr><th onclick="window.location.href='about.html#achievement'" class="cursorpointer"  scope="row">Cca and Certification</th></tr>
+                    <tr><th onclick="window.location.href='about.html#srpsection'" class="cursorpointer"  scope="row">Science and Research</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#classmatese'" class="cursorpointer"  scope="row">Classmates</th></tr>
+                    <tr><th onclick="window.location.href='about.html#contactme'" class="cursorpointer"  scope="row">Contact Me</th></tr>
+                    <tr><th onclick="window.location.href='future.html#ditreflection'" class="cursorpointer"  scope="row">Diploma in Information Technology</th></tr>
+                    <tr><th onclick="window.location.href='future.html#expsp'" class="cursorpointer"  scope="row">Software Engineering and Mobile Developer</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" class="cursorpointer"  scope="row">Feedback </th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" class="cursorpointer"  scope="row">Feedback Form</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#spsection1'" class="cursorpointer"  scope="row">First Impression</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#foodsection'" class="cursorpointer"  scope="row">Food</th></tr>
+                    <tr><th onclick="window.location.href='future.html'" class="cursorpointer"  scope="row">Future Prospect</th></tr>
+                    <tr><th onclick="window.location.href='future.html#jobsection'" class="cursorpointer"  scope="row">Future Job And Opportunities</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#splesson'" class="cursorpointer"  scope="row">Lessons</th></tr>
+                    <tr><th onclick="window.location.href='sp.html'" class="cursorpointer"  scope="row">Singapore Polytechnic</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" class="cursorpointer"  scope="row">User Agreement </th></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/searchspecific.js"></script>
+<!---Class grey for background color to be grey and margintop to have a 200px padding top and bottom-->
+<div class="container-fluid margintop   color ">
+    <div class="container">
+        <div class="row textfly">
+            <!--Occupy whole line-->
+            <div class="col-12">
+               
+                <!--Text appear in center of page-->
+                <div class="col-12 text-center ">
+                    <br><br>
+                    <!--Slide down button *Smooth scrolll had been enabled throughout-->
+                    <!--Icon from BootStrap https://icons.getbootstrap.com/icons/arrow-down-square/-->
+                    <h1>Feedback</h1>
+
+          <button onclick="typeWriter()">Click me</button>
+
+                 <p id="demo"></p>
+                 <!-- JS FUNCTION -->
+
+                    <img  onclick="window.location.href='feedback.html#feedbackform'" src="../photo/arrowdown/arrowdown.svg" alt="Icon of arrow down" class="arrowdown">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End of feedback wall cover section-->
+<!--Start of first section-->
+<div class="container margintop bg-white " id="feedbackform">
+    <div class="row">
+        <!--Text center-->
+<div class="col-12 text-center">
+    <h2><span class="royalblue">Enquiry</span> and <span class="mediumgreen">Feedback</span></h2>
+<p>Your feedback is important to us.Please let us know if you have any feedback :).
+
+</p>
+    <br><br>
+</div>
+        <!-- Left section : consisting of forms ,occupying 6 grid-->
+        <div class="col-sm-12 col-lg-6">
+            <form id="form">
+                <label for="fname" class="h4" required>First name</label><br>
+                <!---Text box-->
+                <input type="text"  class="commonform"  id="fname" name="fname"><br><br>
+                <label class="h4" for="last">Last name</label><br>
+                <!--Selection box componenet-->
+                <select class="notcommonform" id="sir" name="sir" >
+                    <option value="Mr" >Mr</option>
+                    <option value="Miss" >Miss</option>
+                    <option value="Mrs" >Mrs</option>
+                    <option value="Madam" >Madam</option>
+                    <option value="Dr" >Dr</option>
+                </select>
+                <input type="text" class="commonform " id="last" name="last" required><br><br>
+                <label class="h4" for="date">Date of visit</label><br>
+                <!-- date -->
+                <input type="date" class="commonform" id="date" name="date" required><br><br>
+                <label class="h4" for="email" >Email</label><br>
+                <!--Regular expression for email ,needs for xxxx(.)xxx@xxxxxx.xxx-->
+                <input type="email" class="commonform" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" required ><br><br>
+                <label class="h4" for="country">Country</label><br>
+                <!--List of countries-->
+                <select id="country" name="country" class="notcommonform2">
+                    <option value="" selected disabled hidden>Select your country</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Åland Islands">Åland Islands</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Bouvet Island">Bouvet Island</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cayman Islands">Cayman Islands</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Christmas Island">Christmas Island</option>
+                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cote D'ivoire">Cote D'ivoire</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                    <option value="Faroe Islands">Faroe Islands</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="French Southern Territories">French Southern Territories</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guernsey">Guernsey</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-bissau">Guinea-bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                    <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Isle of Man">Isle of Man</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jersey">Jersey</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                    <option value="Korea, Republic of">Korea, Republic of</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macao">Macao</option>
+                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                    <option value="Moldova, Republic of">Moldova, Republic of</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                    <option value="New Caledonia">New Caledonia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Norfolk Island">Norfolk Island</option>
+                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Pitcairn">Pitcairn</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russian Federation">Russian Federation</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saint Helena">Saint Helena</option>
+                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                    <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Timor-leste">Timor-leste</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tokelau">Tokelau</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Viet Nam">Viet Nam</option>
+                    <option value="Virgin Islands, British">Virgin Islands, British</option>
+                    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select><br><br>
+
+                <!--End of country list-->
+                <label for="comment" class="h4" >Feedback</label><br>
+                <textarea id="comment" name="comment" cols="40" rows="5"></textarea><br><br>
+                <input type="checkbox" id="agree" name="agree">
+                <label class="formtext" for="agree">I've read and agreed to User Agreement and Privacy Policy</label>
+              <br><br>
+                <input id="submit" class="submit" type="submit"/>
+                <!--User term and condition button-->
+                <button type="button" id="btnmodel" class="btn btn-primary" data-bs-toggle="modal" data-target="#userModal" data-bs-target="#userModal">Agreement</button>
+              <!--Modal component ,once the button is clicked ,the modal will pop up-->
+                <div class="modal fade modal-dialog-scrollable" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!--Header-->
+                                <h5 class="modal-title" id="userModalLabel">User Agreement and Privacy Policy</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!--Body message-->
+                            <div class="modal-body">
+                                <p><strong>Please read this carefully.</strong></p>
+                                <!--Expanded text--Text generated using https://www.termsfeed.com/eula-generator\\-->
+                                <h1>End-User License Agreement ("Agreement")</h1>
+                                <h2>Last updated: 8 Auguest , 2022</h2>
+                                Please read this End-User License Agreement carefully before clicking the "I've read and agreed to User Agreement and Privacy Policy" button.
+                                <h1> Interpretation and Definitions</h1>
+                                <h2>Interpretation</h2>
+                                The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+                                <h2> Definitions</h2>
+                                For the purposes of this End-User License Agreement:
+                                Agreement means this End-User License Agreement that forms the entire agreement between You and the Company regarding the use of the Application. This Agreement has been created with the help of the EULA Generator.
+                                Application means the software program provided by the Company downloaded by You to a Device, named Sakshi's Portfolio
+                                Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Sakshi's Portfolio.
+                                Content refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content.
+                                Country refers to: Singapore
+                                You means the individual accessing or using the Application or the company, or other legal entity on behalf of which such individual is accessing or using the Application, as applicable.
+                                <h2> Acknowledgment</h2>
+                                By clicking the "I Agree" button, downloading or using the Application, You are agreeing to be bound by the terms and conditions of this Agreement. If You do not agree to the terms of this Agreement, do not click on the "I Agree" button, do not download or do not use the Application.
+                                This Agreement is a legal document between You and the Company and it governs your use of the Application made available to You by the Company.
+                                The Application is licensed, not sold, to You by the Company for use strictly in accordance with the terms of this Agreement.
+                                <h2>Third-Party Services</h2>
+                                The Application may display, include or make available third-party content (including data, information, applications and other products services) or provide links to third-party websites or services.
+                                You acknowledge and agree that the Company shall not be responsible for any Third-party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. The Company does not assume and shall not have any liability or responsibility to You or any other person or entity for any Third-party Services.
+                                You must comply with applicable Third parties' Terms of agreement when using the Application. Third-party Services and links thereto are provided solely as a convenience to You and You access and use them entirely at your own risk and subject to such third parties' Terms and conditions.
+                                <h2>Changes to this Agreement</h2>
+                                The Company reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at the sole discretion of the Company.
+                                By continuing to access or use the Application after any revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, You are no longer authorized to use the Application.
+                                <h2>Governing Law</h2>
+                                The laws of the Country, excluding its conflicts of law rules, shall govern this Agreement and your use of the Application. Your use of the Application may also be subject to other local, state, national, or international laws.
+                                <h2> Entire Agreement</h2>
+                                The Agreement constitutes the entire agreement between You and the Company regarding your use of the Application and supersedes all prior and contemporaneous written or oral agreements between You and the Company.
+                                You may be subject to additional terms and conditions that apply when You use or purchase other Company's services, which the Company will provide to You at the time of such use or purchase.
+                                <h2>Contact Us</h2>
+                                If you have any questions about this Agreement, You can contact Us:<br>
+                                By email: Sakshi.22@ichat.sp.edu.sg<br>
+                                By phone number: +65 123445
+                            </div>
+                            <div class="modal-footer">
+                                <!--Close and download button-->
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- End of the left section of the first section-->
+        <!--Start of the right section of the first section (Occupy 6 grid too)-->
+        <div class="col-sm-12 col-lg-6 text-end  ">
+            <!--A image taken from https://www.clipartmax.com/middle/m2H7G6A0d3H7H7i8_feedback-clipart-enquiry-feedback-flat-icon-png/ -->
+            <img src="../photo/feedback/feedback.png" alt="Image of feedback" class="height400 img-fluid">
+        </div>
+    </div>
+</div>
+
+
+<!--Toast welcome message-->
+<div class="zindex99 position-fixed bottom-0 end-0 p-3">
+         <!-- When using autohide: false, you must add a close button to allow users to dismiss the toast. -->
+         <!-- include aria-atomic="true" to ensure that the entire toast is always announced as a single unit, if not it may cause errors when there are change  -->
+    <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+        <!--Header:Profile pic + name +time-->
+        <div class="toast-header">
+            <img src="../photo/catprofilepic.jpeg"  class="rounded me-2 toastprofile" alt="Image of Sakshi's profile picture">
+            <strong class="mr-auto">Sakshi</strong>
+
+            <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
+            <!--Button to dismiss toast-->
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+            </button>
+        </div>
+        <!--Message-->
+        <div class="toast-body">
+            Hope you enjoyed <br> Do give ur feedback
+        </div>
+    </div>
+</div>

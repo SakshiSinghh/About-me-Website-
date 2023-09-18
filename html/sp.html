@@ -1,0 +1,268 @@
+<!-- NAME:SINGH SAKSHI 
+ADMIN NO: 2228479
+CLASS:DIT/FT/1A/01 -->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the width of the page to follow the screen-width of the device and zoom level when loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Define page title to appear on tab-->
+    <title> Sakshi's SP Life</title>
+    <!---Set page icon to appear at tab-->
+    <link rel="icon" href="../photo/catprofilepic.jpeg"/>
+    <!---Set website description for search engine-->
+    <meta name="description"  content="Personal Website | Sakshi">
+    <meta name="name" content="Sakshi">
+    <meta name="image" content="catprofile.jpeg">
+    <!---Bootstrap 5 support-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Import common css throughout website-->
+    <link href="../css/common.css" rel="stylesheet">
+
+    <!--Import page-specific css-->
+    <link href="../css/sp.css" rel="stylesheet">
+    <!--Import page-specific js-->
+    <script src="../js/sp.js"></script>
+</head>
+<!--Start of body-->
+<body>
+<!--Start of header-->
+<header>
+      <!--Navigation Bar-->
+      <nav id='nav'  class="navbar py-4 navbar-expand-lg navbar-light fixed-top bg-white">
+    
+        <!--Remove the 20% gaps for navigation bar on page-->
+        <div class="container-fluid">
+            <!-- Let profile picture to appear with page title-->
+            <a class="navbar-brand" href="#"><img src="../photo/catprofilepic.jpeg" class="d-inline-block align-text-right rounded me-2 profilepicsizing" alt="Image of Sakshi's profile picture">Sakshi Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <ul class="navbar-nav">
+
+             <!-- Hamburger Icon for mobile format-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Div collapse mode for small screen /  a navigation bar can extend or collapse, depending on the screen size-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Items-->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sp.html" >SP Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="future.html" >Future Prospect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" >Feedback</a>
+                    </li>
+                </ul>
+
+            </ul>
+                <!--Search button-->
+                <form class="d-flex">
+                    <!--Search icon taken from https://www.clipartmax.com/middle/m2H7m2K9H7b1G6m2_computer-icons-google-search-clip-art-transprent-%E2%93%92-transparent-background-magnifying-glass/-->
+                    <img src="../photo/searchbaricons/search.png" id="search" alt="Image of search"/>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--End of header-->
+<!--Start of search overlay configuration-->
+<!--Animation for appear of overlay-->
+<div class="container-fluid searchbaranimation" id="searchbar">
+    <div class="row ">
+        <div class="col-12 ">
+            <!--On typing ,search matching-->
+            
+            <figure>
+                <!--On typing ,search matching continuously-->
+                <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss" placeholder="Search..">
+                <figcaption>If you want to acess the page your currently on , u can search the title of the page or use the nav bar. Eg,if your on About me</figcaption>
+    
+            </figure>
+            <br>
+            <!--Display search result in table-->
+            <div class="col-12 tablesearch" >
+                <table class="table table-light tablesetting" id="searchtable">
+                    <tr><th onclick="window.location.href='about.html'" class="cursorpointer" scope="row">About Me</th></tr>
+                    <tr><th onclick="window.location.href='about.html#achievement'" class="cursorpointer"  scope="row">Cca and Certification</th></tr>
+                    <tr><th onclick="window.location.href='about.html#srpsection'" class="cursorpointer"  scope="row">Science and Research</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#classmatese'" class="cursorpointer"  scope="row">Classmates</th></tr>
+                    <tr><th onclick="window.location.href='about.html#contactme'" class="cursorpointer"  scope="row">Contact Me</th></tr>
+                    <tr><th onclick="window.location.href='future.html#ditreflection'" class="cursorpointer"  scope="row">Diploma in Information Technology</th></tr>
+                    <tr><th onclick="window.location.href='future.html#expsp'" class="cursorpointer"  scope="row">Software Engineering and Mobile Developer</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" class="cursorpointer"  scope="row">Feedback </th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" class="cursorpointer"  scope="row">Feedback Form</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#spsection1'" class="cursorpointer"  scope="row">First Impression</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#foodsection'" class="cursorpointer"  scope="row">Food</th></tr>
+                    <tr><th onclick="window.location.href='future.html'" class="cursorpointer"  scope="row">Future Prospect</th></tr>
+                    <tr><th onclick="window.location.href='future.html#jobsection'" class="cursorpointer"  scope="row">Future Job And Opportunities</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#splesson'" class="cursorpointer"  scope="row">Lessons</th></tr>
+                    <tr><th onclick="window.location.href='sp.html'" class="cursorpointer"  scope="row">Singapore Polytechnic</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" class="cursorpointer"  scope="row">User Agreement </th></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Script for searchbar to hide results by default-->
+<script src="../js/searchspecific.js"></script>
+<!--This is the cover of page-->
+<!--pink section-->
+<div class="container-fluid margintop color">
+    <div class="container">
+        <div class="row text-center textfly">
+            <div class="col-12 text-center">
+                <!-- Centered class photo wigth fade effect-->
+                <img alt="Image of DIT Class Photo" class='greyscale ditcoverphoto img-fluid' id="ditimg" src="../photo/spphoto/ditclass.jpg" >
+
+            </div>
+            <div class="col-12 text-center">
+                <br><br>
+                <h1>Singapore Polytechnic Experience</h1>
+                <p>View first impressions and things about Singapore Polytechnic</p>
+               <!--Arrow down to go next section-->
+                <!--Icon from BootStrap https://icons.getbootstrap.com/icons/arrow-down-square/-->
+                <img  onclick="window.location.href='sp.html#spsection1';" src="../photo/arrowdown/arrowdown.svg" alt="Image of arrow down" class="arrowdown">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Start of firts section-->
+<div class="container margintop" id="spsection1">
+    <div class="row"  id="spsection">
+        <!--Element occupy left half of line and bigger screen ,full line for small screen-->
+        <div class="col-md-6 col-sm-12">
+            <h1 class="display-3"><span class="pinkred">First</span>  Impression</h1>
+            <p>My first impression of Singapore Polytechnic was fairly exciting . On my first day , i got lost trying to find my way to my class as my class was at T22 level 5 which is not even close to SOC classes . Thankfully there were two girls who helped me find way to my class. I was greeted by welcoming friends and GLs . Although freshman orientation  was short , i will forever remember the happy times .We all bonded nicely  . Not only that , Singapore Polytechnic has really cool labs and places for students to explore such as the Fab Lab and Libfrary</p>
+        </div>
+        <!--Element occupy left half of line and bigger screen ,full line for small screen-->
+        <!--A fading carousel switching photo at 1.7s per photo (1700ms) -->
+        <div class="col-md-6 col-sm-12 text-end justify-content-end d-flex align-item-end">
+            <!-- The data-bs-ride="carousel" attribute is used to mark a carousel as animating starting at page load -->
+            <div id="carouselfade"   class="spcarouselphoto1 carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="1700" class="carousel-item active">
+                        <img src="../photo/spphoto/singaporepolytechnicfrontview.jpg"  class="d-block w-100 spcarouselphoto"  alt="Image of Singapore Polytechnic Front">
+                    </div>
+                    <div data-bs-interval="1700" class="carousel-item">
+                        <img src="../photo/spphoto/walkway.jpg"   class="d-block w-100 spcarouselphoto"  alt="Image of Singapore Polytechnic Walk Way">
+                    </div>
+                    <div data-bs-interval="1700" class="carousel-item">
+                        <img src="../photo/spphoto/blockt21.jpg" class="d-block w-100 spcarouselphoto" alt="Image of Singapore Polytechnic T21 block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of section 1-->
+<!--Start of section 2-->
+<div class="container-fluid color margintop" id="classmatese" >
+    <div class="container" >
+        <div class="row" id="studysection">
+            <!--Icon occupy left half of line for medium screen and larger,full line for  small screen-->
+            <div class="col-sm-12 col-md-6">
+                <!-- Icon from https://cdn.iconscout.com/icon/premium/png-512-thumb/study-2280013-1902258.png-->
+<!--Set image heightt to be 300px-->
+                <img src="../photo/spphoto/bookicon.png" id="study"  alt="Image of studying" class="greyscale studysvg">
+            </div>
+            <!--Icon occupy right half of line for medium screen and larger,full line for  small screen-->
+<div class="col-sm-12 col-md-6 text-start">
+    <h1 class="display-4"><span class="orangered">Classmates</span> And <span class="purplecolor">Classroom</span></h1>
+    <p>My class consists of 19 people and i could not have asked for a better class . All my classmates are very helpful and welcoming to each other .
+        we all enjoy studying together and spending time together . The clasrooms in Singapore Polytechnic are a joy to study in. There are smooth tables
+        and chairs with powerful air conditioning that gives the perfect environment to study in . This is very different from Secondary School as in Secondary 
+        Sxhool we had 40 people in a class with fans which used to get very stufffy and humid 
+    </p>
+</div>
+        </div>
+    </div>
+</div>
+<!--End of second section-->
+<!--Start of third section-->
+<div class="container margintop">
+    <div class="row" id="splesson">
+        <!--Icon occupy left half of line for medium screen and larger,full line for  small screen-->
+<div class="col-sm-12 col-md-6">
+    <!--Subtitle with some color-->
+    <h1 class="display-4"><span class="forestgren">Lessons</span> In SP</h1>
+    <P>Lesson is SP are very condusive due to the air conditioning . However , with weeks passing  lessons are getting harder and need more  commitment . Unlike secondary school  where teachers check up on us , in Poly its our responsibility to do our assignments and hand in on time . Lessons are much more intensive and self directed and with CA2 coming closer the pressure is building up. I still do enjoy mu lessons as my teachers always help me when i need help and sos do my friends</P>
+</div>
+        <!--A image occupy right half of line for medium screen and larger,full line for  small screen-->
+        <div class="col-sm-12 col-md-6 d-flex justify-content-end align-content-end ">
+           <!--A image of classroom in Singapore Polytechnic-->
+            <div  class="SP" id="SP" ></div>
+        </div>
+    </div>
+</div>
+<!-- End of third section-->
+<!--Start of forth section -->
+<div class="container-fluid color margintop">
+    <div class="container" id="foodsection">
+        <div class="row">
+            <!-- Occupy left half of line for screen above medium and full line for small screen-->
+            <div class="col-sm-12 col-md-6">
+                <!--Image of food-->
+                <!-- Image taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ficon%2Ffast-food-1851561&psig=AOvVaw2ALq-TrlopzTEroz0SIhtt&ust=1626397182807000&source=images&cd=vfe&ved=0CAsQjhxqFwoTCPiZn-Xv4_ECFQAAAAAdAAAAABAD-->
+<img src="../photo/spphoto/foodicon.png"  id="food" alt="Image of Food" class="greyscale foodsvg">
+            </div>
+            <!-- Occupy right half of line for screen above medium and full line for small screen-->
+<div class="col-sm-12 col-md-6 text-start">
+    <h1 class="display-4"><span class="golden">Food</span> In SP</h1>
+    <P>Singapore Polytechnic has a wide variety of food. I usually go to Fc6 and Fc4 because they are the closest to my class. My personal favorites are the Samyang Carbona and Waffel with the ice cream. They always hIt the spot. My favorite in FC4 is the chicken rice beacuse its cheap and tasty . I hope to try the other Fcs in the future !!!</P>
+</div>
+        </div>
+    </div>
+</div>
+
+<!-- End of forth section-->
+<!--Start of fifth section-->
+<div class="container margintop">
+    <div class="row">
+        <!--Conclusion text-->
+        <!-- Occupy left half of line for screen above medium and full line for small screen-->
+<div class="col-sm-12 col-md-6 ">
+    <h1 class="display-4">Lastly...<span class="pinkred" >Conclusion</span></h1>
+    <p>Well, SP is really big and I have just only explored a small part of it (sometimes I still get lost) so in the next 3 years of polytechnic life, there is a lot for me to explore. Academics-wise, I will put in 100% in every assignment, hopefully, I can get a good GPA in the end, continue my studies and eventually achieve my dream.</p>
+</div>
+        <!--Singapore Polytechnic Logo-->
+        <!-- Occupy right half of line for screen above medium and full line for small screen-->
+        <div class="col-sm-12 col-md-6 text-end ">
+            <img src="../photo/spphoto/singaporepolytechniclogo.png" alt="Image of Singapore Polytechnic logo" class="splogo">
+        </div>
+    </div>
+</div>
+<!--Toast welcome message-->
+<div class="zindex99 position-fixed bottom-0 end-0 p-3">
+
+    <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+        <!--Header:Profile pic + name +time-->
+        <div class="toast-header">
+            <img src="../photo/catprofilepic.jpeg"  class="rounded me-2 toastprofile" alt="Image of Sakshi's profile picture">
+            <strong class="mr-auto">Sakshi</strong>
+
+            <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
+            <!--Button to dismiss toast-->
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+            </button>
+        </div>
+        <!--Message-->
+        <div class="toast-body">
+            Hello!I have just joined SP for a few month. Have fun viewing my Singapore Polytechnic experience till today.<br>Have a nice day!! :)
+        </div>
+    </div>
+</div>
+</body>
+</html>
